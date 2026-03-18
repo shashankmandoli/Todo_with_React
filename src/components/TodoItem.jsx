@@ -9,7 +9,7 @@ function TodoItem({ todo }) {
 
     const editTodo = () => {
         updateTodo(todo.id, {...todo, todo: todoMsg})
-        isTodoEditable(false)
+        setisTodoEditable(false)
     }
 
     const toggleCompleted = () => {
@@ -45,7 +45,7 @@ function TodoItem({ todo }) {
 
                     if (isTodoEditable) {
                         editTodo();
-                    } else setIsTodoEditable((prev) => !prev);
+                    } else setisTodoEditable((prev) => !prev);
                 }}
                 disabled={todo.completed}
             >
