@@ -1,12 +1,48 @@
-# React + Vite
+# Todo List (React + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple todo list app built with **React** and **Vite** to demonstrate state management using **React Context** and basic CRUD operations.
 
-Currently, two official plugins are available:
+## ✅ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Add, edit, and remove todos
+- Toggle todo completion
+- Keeps state in React Context for easy access across components
+- Simple, minimal UI for learning and experimentation
 
-## Expanding the ESLint configuration
+## 🗂️ Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- `src/App.jsx` - App layout and component composition
+- `src/components/TodoForm.jsx` - Form for creating new todos
+- `src/components/TodoItem.jsx` - Individual todo item UI + actions
+- `src/context/Context.js` - Context implementation and reducer
+- `src/context/index.js` - Context provider wrapper
+
+## 🚀 Run Locally
+
+From this folder:
+
+```bash
+npm install
+npm run dev
+```
+
+Then open the URL shown in the terminal (usually `http://localhost:5173`).
+
+## 🧪 Build
+
+Generate a production build:
+
+```bash
+npm run build
+```
+
+Preview the production build locally:
+
+```bash
+npm run preview
+```
+
+## 📚 Learn More
+
+- [React documentation](https://react.dev)
+- [Vite documentation](https://vitejs.dev)
